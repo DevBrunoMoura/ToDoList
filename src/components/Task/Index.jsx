@@ -1,8 +1,8 @@
 import React from "react";
-import { CgClose, CgInfo } from "react-icons/cg";
+import { CgTrash , CgInfo } from "react-icons/cg";
 import { useHistory } from "react-router-dom";
 
-import "./Task.css";
+import "./style.css";
 
 const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
   const history = useHistory();
@@ -13,7 +13,7 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
   return (
     <div
       className="task-container"
-      style={task.completed ? { borderLeft: "15px solid  #629637" } : {}}
+      style={task.completed ? { borderLeft: "15px solid  #629637", textDecoration: "line-through" } : {}}
     >
       <div className="task-title" onClick={() => handleTaskClick(task.id)}>
         {task.title}
@@ -30,7 +30,7 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion }) => {
             <CgInfo />
           </button>
 
-          <CgClose />
+          <CgTrash />
         </button>
       </div>
     </div>

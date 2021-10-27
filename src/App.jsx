@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import "./App.css";
 
-import TaskDetails from "./components/TaskDetails";
-import Header from "./components/Header";
-import AddTask from "./components/AddTask";
-import Tasks from "./components/Tasks";
+import TaskDetails from "./components/TaskDetails/Index";
+import Header from "./components/Header/Index";
+import AddTask from "./components/AddTask/Index";
+import Tasks from "./components/Tasks/Index";
 
 const App = () => {
   const [tasks, setTasks] = useState([  ]);

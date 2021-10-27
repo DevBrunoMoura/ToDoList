@@ -27,7 +27,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./halloween);
+  background-image: url(./assets/images/halloween);
 }
 
 code {
