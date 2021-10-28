@@ -15,11 +15,6 @@
     outline: none;
 }
 
-.add-task-input:hover{
-    background-color: rgb(30, 30, 238);
-    color: rgb(0, 0, 0);
-
-}
 
 .add-task-button-container {
     margin-left: 10px;
